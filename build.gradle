@@ -127,6 +127,9 @@ bintray {
 		labels = ['azure', 'devops', 'configuration', 'remote']
 		publicDownloadNumbers = true
 		version {
+			gpg {
+                sign = true
+            }
 			name = project.version
 			desc = project.description
 			vcsTag = project.version
