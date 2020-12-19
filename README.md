@@ -69,6 +69,23 @@ try {
 
 ```
 
+### alternative
+you can use the application.properties
+
+example application.properties 
+
+```
+remote-configuration.organization=organization
+#azure devops project id
+remote-configuration.project=projectId
+remote-configuration.repository=repositorio name
+remote-configuration.pathFile="/config.json"
+remote-configuration.authorizationHeader=Basic Auth
+
+```
+
+This way you wouldn't have to use the remoteConfiguration.buildConfiguration
+
 ## summary
 
 Read a config file from your git repository. It is a json file with configuration, flags, etc.
