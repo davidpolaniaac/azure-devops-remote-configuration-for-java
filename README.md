@@ -8,7 +8,7 @@ This configuration store is ideally versioned under Git version control and can 
 
 As you can see, the remote configuration lives in its own application. All this application does is request information to Git repositories, from client applications asking for configuration, and return the applicable configuration for those requests.
 
-## requirements
+## Requirements
 
 - Repository in azure devops
 - Json file with configuration
@@ -29,7 +29,7 @@ config.json
 }
 ```
 
-## installation
+## Installation
 
 Maven 
 
@@ -69,7 +69,7 @@ try {
 
 ```
 
-### alternative
+### Alternative
 you can use the application.properties
 
 example application.properties 
@@ -86,7 +86,7 @@ remote-configuration.authorizationHeader=Basic Auth
 
 This way you wouldn't have to use the remoteConfiguration.buildConfiguration
 
-## summary
+## Summary
 
 Read a config file from your git repository. It is a json file with configuration, flags, etc.
 
